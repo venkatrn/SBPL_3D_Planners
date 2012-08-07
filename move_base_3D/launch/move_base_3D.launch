@@ -1,0 +1,20 @@
+<launch>
+  <master auto="start"/>
+  <param name="/use_sim_time" value="false"/>
+
+  <!-- ASIPP Global Planner Node -->
+  <node pkg="move_base_3D" type="move_base_3D" name="MoveBase3D" respawn="false" output="screen" clear_params="true">
+    <remap from="/map" to="/map" />
+    <remap from="/goal_pose" to="/goal_pose" />
+    <remap from="/currentPos" to="/currentPos" />
+    <rosparam file="$(find sbpl_dynamic_env_global_planner_3D)/config/asipp_params.yaml" command="load"/>
+    <param name="primitive_filename" value="$(find sbpl_dynamic_env_global_planner_3D)/config/heli_time_0.1.mprim" />
+    <param name="static_collision_map" value="$(find sbpl_dynamic_env_global_planner_3D)/config/wg-room-1.bt" />
+  </node>
+
+  <!-- UAV Goal Set -->
+  <node pkg="uav_set_goal" name="UAVSetGoal" type="uav_set_goal">
+  </node>
+
+</launch>
+

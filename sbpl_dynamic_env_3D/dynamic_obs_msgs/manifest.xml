@@ -1,0 +1,15 @@
+<package>
+  <description brief="Messages for dynamic obstacles">
+
+  </description>
+  <author>Mike Phillips</author>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/nav_msgs</url>
+  <depend package="geometry_msgs"/>
+
+  <export>
+    <cpp cflags="-I${prefix}/msg/cpp -I${prefix}/srv/cpp"/>
+  </export>
+</package>
+
+

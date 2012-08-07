@@ -1,0 +1,26 @@
+<package>
+  <description brief="move_base_3D">
+
+    A super-wrapper that maintains the collision map and subscribes to SLAM and Laser topics. The wrapper-class for the planner must be instantiated here.
+    This wrapper subscribes to the goal topic and calls the planner's makePlan function in the callback.
+
+  </description>
+  <author>Venkatraman Narayanan</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/move_base_3D</url>
+  <depend package="roscpp"/>
+  <depend package="arm_navigation_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="visualization_msgs"/>
+  <depend package="std_srvs"/>
+  <depend package="std_msgs"/>
+  <depend package="pcl_ros"/>
+  <depend package="octomap_ros"/>
+  <depend package="sbpl_dynamic_env_global_planner_3D"/>
+  <depend package="sbpl_3d_planner"/>
+
+
+</package>
+
+

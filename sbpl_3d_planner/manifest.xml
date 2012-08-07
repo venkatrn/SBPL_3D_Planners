@@ -1,0 +1,21 @@
+<package>
+  <description brief="sbpl_3d_planner">
+
+     Abstract base class for an SBPL 3D Planner.
+
+  </description>
+  <author>Venkatraman Narayanan</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/sbpl_3d_planner</url>
+  <depend package="roscpp"/>
+  <depend package="arm_navigation_msgs"/>
+  <depend package="geometry_msgs"/>
+
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/lib -W1, -rpath,${prefix}/lib -lros"/>
+  </export>
+
+</package>
+
+

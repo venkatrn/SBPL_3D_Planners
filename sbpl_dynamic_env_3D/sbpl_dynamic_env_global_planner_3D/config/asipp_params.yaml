@@ -1,0 +1,65 @@
+#Map Parameters
+worldx: 20.0
+worldy: 20.0
+worldz: 2.0
+originx: -10.0
+originy: -10.0
+originz: 0.0
+resolution: 0.1
+time_resolution: 0.1
+global_frame_id: /map
+use_collision_map_from_sensors: true
+
+#Dynamic Obstacle Parameters
+nominalvel_mpersecs: 0.4
+timetoturn45degsinplace_secs: 0.6
+inflation_radius: 0.55
+
+#Costmap Parameters
+cost_decay_radius: 0.75     #in meters
+cost_inscribed_thresh: 85   #0-255
+cost_possiby_circumscribed_thresh: 0.80 #0-255
+obst_cost_thresh: 255
+dyn_obs_cost_thresh: 255
+
+#Planner Parameters
+allocated_time: 0.2 #0.5
+initial_epsilon: 10.0
+decrease_epsilon: 1.0
+temporal_padding: 1.5
+
+#Topic names
+#slam_topic: currentPos
+#goal_topic: goal
+#laser_topic: cloud_in
+
+#Collision Map Parameters
+frame_id: /map
+base_frame_id: base_footprint
+height_map: false
+sensor_model:
+  max_range: -1
+  hit: 0.7
+  miss: 0.4
+  min: 0.12
+  max: 0.97
+latch: false
+filter_ground: false
+ground_filter:
+  distance: 0.04
+  angle: 0.15
+  plane_distance: 0.07
+#pointcloud_min|max_z
+#occupancy_min|max_z
+
+#Local Costmap Params
+window_side: 2.0
+local_pub_rate: 0.1
+
+#global_frame: /map
+#robot_base_frame: base_link
+#update_frequency: 5.0
+#publish_frequency: 0.0
+#static_map: true
+#rolling_window: false
+#observation_sources: ""

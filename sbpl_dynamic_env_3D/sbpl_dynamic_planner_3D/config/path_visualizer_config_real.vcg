@@ -1,0 +1,79 @@
+Background\ ColorR=0.282353
+Background\ ColorG=0.0941176
+Background\ ColorB=0.129412
+Fixed\ Frame=/map
+Target\ Frame=/map
+CollisionMap.Alpha=1
+CollisionMap.ColorR=0
+CollisionMap.ColorG=0
+CollisionMap.ColorB=0
+CollisionMap.Enabled=1
+CollisionMap.Override\ Color=0
+CollisionMap.Render\ Operation=1
+CollisionMap.Topic=/collision_map_out
+Grid.Alpha=0.5
+Grid.Cell\ Size=0.1
+Grid.ColorR=0.301961
+Grid.ColorG=0.27451
+Grid.ColorB=0.27451
+Grid.Enabled=1
+Grid.Line\ Style=0
+Grid.Line\ Width=0.03
+Grid.Normal\ Cell\ Count=0
+Grid.OffsetX=0
+Grid.OffsetY=0
+Grid.OffsetZ=0
+Grid.Plane=0
+Grid.Plane\ Cell\ Count=100
+Grid.Reference\ Frame=<Fixed Frame>
+Interactive\ Markers.Enabled=1
+Interactive\ Markers.Show\ Axes=0
+Interactive\ Markers.Show\ Descriptions=1
+Interactive\ Markers.Show\ Tool\ Tips=1
+Interactive\ Markers.Update\ Topic=/uav_set_goal/update
+Map.Alpha=0.7
+Map.Draw\ Behind=0
+Map.Enabled=0
+Map.Topic=/map
+Path.Alpha=1
+Path.ColorR=0.1
+Path.ColorG=1
+Path.ColorB=0
+Path.Enabled=1
+Path.Topic=/plan
+Robot\ Model.Alpha=1
+Robot\ Model.Collision\ Enabled=0
+Robot\ Model.Enabled=1
+Robot\ Model.Robot\ Description=robot_description
+Robot\ Model.TF\ Prefix=
+Robot\ Model.Update\ Interval=0
+Robot\ Model.Visual\ Enabled=1
+Tool\ 2D\ Nav\ GoalTopic=currentPos
+Tool\ 2D\ Pose\ EstimateTopic=initialpose
+Camera\ Type=rviz::OrbitViewController
+Camera\ Config=0.931 0.995768 11.6658 -2.20428 0.399387 -0.060076
+Property\ Grid\ State=selection=Background Color;expanded=.Global Options,Map.Enabled,Grid.Enabled,Robot Model.Enabled,CollisionMap.Enabled,CollisionMap.Enabled.CollisionMap.StatusTopStatus,Interactive Markers.Enabled;scrollpos=0,0;splitterpos=240,481;ispageselected=1
+[Display0]
+Name=Map
+Package=rviz
+ClassName=rviz::MapDisplay
+[Display1]
+Name=Grid
+Package=rviz
+ClassName=rviz::GridDisplay
+[Display2]
+Name=Robot Model
+Package=rviz
+ClassName=rviz::RobotModelDisplay
+[Display3]
+Name=Path
+Package=rviz
+ClassName=rviz::PathDisplay
+[Display4]
+Name=CollisionMap
+Package=mapping_rviz_plugin
+ClassName=mapping_rviz_plugin::CollisionMapDisplay
+[Display5]
+Name=Interactive Markers
+Package=rviz
+ClassName=rviz::InteractiveMarkerDisplay

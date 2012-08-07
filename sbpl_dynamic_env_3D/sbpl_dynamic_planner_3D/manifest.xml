@@ -1,0 +1,22 @@
+<package>
+  <description brief="sbpl_dynamic_planner_3D">
+
+  An anytime planner for dynamic environments. It takes in a start, goal, static costmap, and predicted dynamic obstacle trajectories. It returns a safe path (x,y,z,yaw) if one exists.
+
+  </description>
+  <author>Venkatraman Narayanan, Michael Phillips,Maxim Likhachev</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/sbpl_dynamic_planner</url>
+  <depend package="sbpl"/>
+  <depend package="visualization_msgs"/>
+  <depend package="tf"/>
+
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lsbpl_dynamic_planner"/>
+  </export>
+
+
+</package>
+
+

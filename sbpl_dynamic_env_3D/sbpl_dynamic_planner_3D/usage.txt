@@ -1,0 +1,10 @@
+ test_sbpl3D ./test_envs/test0000.exp ./tests/heli_time_0.1.mprim ./test_envs/dynObs0000.dob
+
+ The format of the environment file is as follows: all parameters (just like in SIPP), and then the 2D map for plane Z=0, followed by the 2D map for plane Z = 1, so on till the final Z-plane.
+ I have assumed the robot and all other dynamic obstacles to be spheres. Collision checking is done by simply checking the distance between the center of the robot and dynamic obstacle and comparing it with the robot's radius.
+ For the footprint, pass (at least one) a pair of diametrically opposite points on the robot's circumscribed sphere.
+
+
+ TODO: mapdata comes from costmap2D in the global planner. The planner expects mapdata to contain 3D information. Modify the global planner acccordingly.
+ TODO: UpdateCost in global planner
+ TODO: Use the getVoxel member function in voxel grid to get the occupancy status of voxels

@@ -1,0 +1,31 @@
+<package>
+  <description brief="sbpl_dynamic_env_global_planner_3D">
+
+A wrapper around sbpl_dynamic_planner_3D which allows it to be used as a global planner for the navigation stack.
+
+  </description>
+  <author>Michael Phillips (Modified by Venkatraman Narayanan)</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/sbpl_dynamic_env_global_planner</url>
+  <depend package="roscpp"/>
+  <depend package="sbpl"/>
+  <depend package="sbpl_dynamic_planner_3D"/>
+  <depend package="sbpl_arm_planner"/>
+  <depend package="sbpl_3d_planner"/>
+  <depend package="dynamic_obs_msgs"/>
+  <depend package="arm_navigation_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="std_srvs"/>
+  <depend package="std_msgs"/>
+  <depend package="pcl_ros"/>
+  <depend package="octomap_ros"/>
+
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lsbpl_dynamic_env_global_planner_3D"/>
+    <nav_core plugin="${prefix}/bgp_plugin.xml" />
+  </export>
+
+</package>
+
+
